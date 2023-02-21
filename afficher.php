@@ -9,7 +9,7 @@
 <body>
     <form action="enregistrer.php" method="get">
         <input type="hidden" name="pseudo" value="toto"/>
-        <input type="text" name="phrase" alt="Ecrivez votre message"/>
+        <input type="text" name="phrase" placeholder="Ecrivez votre message" required/>
         <input type="submit" name="envoyer" value="Envoyer"/>
     </form>
 </body>

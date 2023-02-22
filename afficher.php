@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
     <input type="hidden" id="pseudo" value="toto"/>
     <input type="text" id="phrase" placeholder="Ecrivez votre message" required/>
-    <input type="button" name="envoyer" value="Envoyer" onClick="ajaxEnregistrer();"/>
+    <button id="envoyer">Envoyer</button>
+    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -26,10 +26,28 @@ function ajaxEnregistrer(){
     xhr.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200){
             // TODO: Coder la mise à jour de la page avec le nouveau message
-            alert("Ca marche ?")}
+            
+        }
     }
 
     xhr.open("get","enregistrer.php?pseudo=" + pseudo
             + "&phrase=" + phrase, true);
     xhr.send();
 }
+
+$("#envoyer").click(function(){
+
+    // Récupération des paramètres
+    let pseudo = document.getElementById("pseudo").value;
+    let phrase = document.getElementById("phrase").value;
+
+    $.ajax({
+        url: "enregistrer.php",
+        data: {"pseudo":pseudo, "phrase":phrase},
+        type: "get",
+        success: function(msg){
+            
+        }
+    })
+
+});

@@ -23,15 +23,17 @@ function ajaxEnregistrer(){
     let pseudo = document.getElementById("pseudo").value;
     let phrase = document.getElementById("phrase").value;
 
-    xhr.onreadystatechange = function(){
-        if (this.readyState == 4 && this.status == 200){
-            
+    if (phrase !== "") {
+        xhr.onreadystatechange = function(){
+            if (this.readyState == 4 && this.status == 200){
+                
+            }
         }
+    
+        xhr.open("get","enregistrer.php?pseudo=" + pseudo
+                + "&phrase=" + phrase, true);
+        xhr.send();
     }
-
-    xhr.open("get","enregistrer.php?pseudo=" + pseudo
-            + "&phrase=" + phrase, true);
-    xhr.send();
 
     document.getElementById("phrase").value = null;
 }

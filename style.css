@@ -5,13 +5,13 @@
 
 
 .bulle1, .bulle2 {
-    margin-top: 5px !important;
-	margin-bottom: 5px !important;
+    margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .bulle1 {
     background: #42a5f5;
-	color: #fff !important;
+	color: #fff;
 	border-radius: 20px 20px 3px 20px;
 	display: block;
 	max-width: 100%;
@@ -20,7 +20,7 @@
 
 .bulle2 {
     background: #f1f1f1;
-	color: #000 !important;
+	color: #000;
 	border-radius: 20px 20px 20px 3px;
 	display: block;
 	max-width: 100%;

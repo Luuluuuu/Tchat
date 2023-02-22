@@ -25,11 +25,19 @@ function ajaxEnregistrer(){
 
     xhr.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200){
-            // TODO: Coder la mise à jour de la page avec le nouveau message
-            alert("Ca marche ?")}
+            
+        }
     }
 
     xhr.open("get","enregistrer.php?pseudo=" + pseudo
             + "&phrase=" + phrase, true);
     xhr.send();
+
+    document.getElementById("phrase").value = null;
+}
+
+const autoRefresh = setInterval(affichageChat, 1000);
+
+function affichageChat () { 
+    $("#chat").load("recuperer.php"); 
 }

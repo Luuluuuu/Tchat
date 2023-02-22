@@ -20,6 +20,7 @@
                 echo $row["AuteurChat"] . " : " . $row["ContenuChat"] . " (" . $row["HoraireChat"] . ')<br/>';
             }
         }
+        deconnexion($linkpdo);
     ?>
 </body>
 </html>

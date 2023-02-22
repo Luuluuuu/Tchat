@@ -1,4 +1,4 @@
-const autoRefresh = setInterval(affichageChat, 1000);
+const autoRefresh = setInterval(affichageChat, 100);
 
 function affichageChat () { 
 $("#chat").load("recuperer.php"); 
@@ -20,7 +20,7 @@ function ajaxEnregistrer() {
     }
 }
 
-$("#envoyer").click(ajaxEnregistrer());
+$("#envoyer").click(function() {ajaxEnregistrer();});
 
 $(document).keyup(function(event) {
     if (event.which === 13) {

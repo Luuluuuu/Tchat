@@ -8,10 +8,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="chat">
+        <?php include("recuperer.php"); ?>
+    </div>
     <input type="hidden" id="pseudo" value="toto"/>
     <input type="text" id="phrase" placeholder="Ecrivez votre message" required/>
     <button id="envoyer">Envoyer</button>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -4,8 +4,7 @@ function affichageChat () {
 $("#chat").load("recuperer.php"); 
 }
 
-$("#envoyer").click(function(){
-
+function ajaxEnregistrer() {
     // Récupération des paramètres
     let pseudo = document.getElementById("pseudo").value;
     let phrase = document.getElementById("phrase").value;
@@ -19,5 +18,12 @@ $("#envoyer").click(function(){
             }
         })
     }
+}
 
+$("#envoyer").click(ajaxEnregistrer());
+
+$(document).keyup(function(event) {
+    if (event.which === 13) {
+        ajaxEnregistrer();
+    }
 });

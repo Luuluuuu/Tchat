@@ -1,7 +1,7 @@
 const autoRefresh = setInterval(affichageChat, 1000);
 
 function affichageChat () { 
-$("#chat").load("recuperer.php"); 
+    $("#chat").load("recuperer.php"); 
 }
 
 /* Envoie une requête par Ajax pour enregistrer la nouvelle phrase

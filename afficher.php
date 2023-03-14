@@ -13,19 +13,20 @@
     <div id="chat">
         <?php include("recuperer.php"); ?>
     </div>
-    
-    <!-- Saisie du message -->
-    <?php
-        session_start();
-        if (!empty($_SESSION["pseudo"])){
-            echo '<input hidden id="pseudo" value="' . $_SESSION["pseudo"] . '" required/>';
-        } else {
-            echo '<input type="text" id="pseudo" placeholder="Ecrivez votre pseudo" required/>';
-        }
-    ?> </br>
-    <input type="text" id="phrase" placeholder="Ecrivez votre message" required/>
-    <button id="envoyer">Envoyer</button>
-    <p id="erreur"></p>
+    <div id="barreEnvoi">
+        <!-- Saisie du message -->
+        <?php
+            session_start();
+            if (!empty($_SESSION["pseudo"])){
+                echo '<input hidden id="pseudo" value="' . $_SESSION["pseudo"] . '" required/>';
+            } else {
+                echo '<input type="text" id="pseudo" placeholder="Ecrivez votre pseudo" required/>';
+            }
+        ?> </br>
+        <input type="text" id="phrase" placeholder="Ecrivez votre message" required/>
+        <button id="envoyer">Envoyer</button>
+        <p id="erreur"></p>
+    </div>
 
     <!-- SCRIPT -->
     <script src="script.js"></script>

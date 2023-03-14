@@ -1,8 +1,17 @@
 * {
+    margin: 0px;
     padding: 0px;
     font-family: Calibri, sans-serif;
 }
 
+html,body {
+    width: 100%;
+}
+
+#corp {
+    width: 60%;
+    margin: auto;
+}
 
 .bulle1, .bulle2 {
     margin-top: 5px;
@@ -38,8 +47,14 @@
     margin-bottom: 1rem;
 }
 
+#barreEnvoi {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 #phrase {
-    width: 94%;
+    width: 90%;
     padding: 5px;
     border-radius: 10px;
     border-style: none;
@@ -49,7 +64,7 @@
 }
 
 #envoyer {
-    width: 5%;
+    width: 10%;
     border-radius: 10px;
     border-style: none;
     background-color:#42a5f5;

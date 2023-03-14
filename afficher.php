@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="corp">
     <div id="chat">
         <?php include("recuperer.php"); ?>
     </div>
     <input type="hidden" id="pseudo" value="toto"/>
-    <input type="text" id="phrase" placeholder="Ecrivez votre message" required/>
-    <button id="envoyer">Envoyer</button>
+    <div id="barreEnvoi">
+        <input type="text" id="phrase" placeholder="Ecrivez votre message" required/>
+        <button id="envoyer">Envoyer</button>
+    </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
